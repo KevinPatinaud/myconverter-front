@@ -1,0 +1,40 @@
+.divPrimary {
+  width: 100%;
+  min-width: 600px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.primaryText {
+  display: contents;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.currencySource {
+  margin-top: 0px;
+}
+
+.switch {
+  margin-top: 60px;
+}
+
+.switchBtn {
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  color: #666666;
+  border-radius: 100%;
+  border: 1px solid black;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 0px 5px 1px #ccc;
+  cursor: pointer;
+}
+
+.currencyTargeted {
+  margin-top: 60px;
+}

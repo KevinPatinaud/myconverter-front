@@ -1,0 +1,16 @@
+.currencySelector {
+  text-align: left;
+  border-radius: 0px 20px 20px 0px;
+  width: 400px;
+  -moz-box-shadow: 2px 0px 5px 1px #ccc;
+  -webkit-box-shadow: 2px 0px 5px 1px #ccc;
+  box-shadow: 2px 0px 5px 1px #ccc;
+}
+
+.currencySelectedIsValide {
+  color: #000000;
+}
+
+.currencySelectedIsNotValide {
+  color: #aaaaaa;
+}

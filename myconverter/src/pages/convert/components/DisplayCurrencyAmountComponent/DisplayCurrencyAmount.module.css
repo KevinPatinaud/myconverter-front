@@ -1,0 +1,15 @@
+.displayCurrency {
+  width: 100%;
+  min-width: 100px;
+  max-width: 150px;
+  border-radius: 20px 0px 0px 20px;
+  text-align: right;
+  border: 1px solid black;
+  background: #eeeeee;
+  box-shadow: inset 0 0 10px #aaaaaa;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 10px;
+}
