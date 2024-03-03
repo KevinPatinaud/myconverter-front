@@ -15,8 +15,9 @@ const CurrencyList: FC<{
     <>
       {currencyToisplay.length > 0 && (
         <div className={styles.areaPrimary}>
-          {currencyToisplay.map((currency) => (
+          {currencyToisplay.map((currency, index) => (
             <div
+              key={index}
               className={styles.line}
               onClick={() => {
                 onCurrencySelected(currency);

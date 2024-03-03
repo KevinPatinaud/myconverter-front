@@ -10,18 +10,23 @@ const InputCurrencyAmount: FC<{ onChange: (value: number) => void }> = ({
     <>
       <input
         type="text"
+        maxLength={9}
         className={[styles.inputCurrency, "selectPrimary"].join(" ")}
         onChange={(e) => {
+          const inputValue = e.target.value.replace(" ", "");
           if (
-            !isNaN(Number(e.target.value)) && e.target.value.includes(".")
-              ? e.target.value.split(".")[1].length <= 2
-              : true
+            !isNaN(+inputValue) &&
+            +inputValue > 0 &&
+            (!inputValue.includes(".") ||
+              (inputValue.includes(".") &&
+                inputValue.split(".")[1].length <= 2))
           ) {
-            setValue(e.target.value);
-            onChange(+e.target.value);
+            console.log("update");
+            setValue(inputValue);
+            onChange(+inputValue);
           }
         }}
-        value={value}
+        value={value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ")}
       ></input>
     </>
   );
